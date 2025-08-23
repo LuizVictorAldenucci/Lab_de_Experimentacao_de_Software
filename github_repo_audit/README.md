@@ -17,7 +17,8 @@
 3. **Coleta (até 1000 repositórios)**:
    ```bash
    python fetch_github_repos.py --query "stars:>10" --out repos.csv --max 1000 --sort stars --order desc
-   ```
+   ```a
+   
 
 4. **Análise + relatório inicial**:
    ```bash
