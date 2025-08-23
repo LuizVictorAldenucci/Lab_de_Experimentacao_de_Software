@@ -29,9 +29,7 @@ def analyze(csv_file, out_file):
     results['RQ06_open_issues_median'] = df['open_issues_count'].median()
 
     with open(out_file, "w", encoding="utf-8") as f:
-        f.write("# Relatório de Análise
-
-")
+        f.write("# Relatório de Análise")
         for k,v in results.items():
             f.write(f"**{k}:** {v}\n\n")
 

@@ -1,7 +1,7 @@
 import requests, csv, os, argparse
 
 TOKEN = os.getenv("GITHUB_TOKEN")
-HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
+HEADERS = {"Authorization": f"token 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"} if TOKEN else {}
 
 def fetch_repos(query, out_file, max_repos=1000, sort="stars", order="desc"):
     repos = []
