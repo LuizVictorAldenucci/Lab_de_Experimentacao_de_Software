@@ -1,5 +1,5 @@
 # Relatório — Lab03S02
-**Autora:** Gabrielle Lira Dantas Wanderley • **Curso:** Engenharia de Software (PUC Minas)
+**Autora:** Luiz e Breno• **Curso:** Engenharia de Software (PUC Minas)
 
 ## Introdução & Hipóteses
 - H1: PRs maiores → maior chance de *close*.
