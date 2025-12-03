@@ -1,0 +1,10 @@
+{
+  "name": "lab05-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2",
+    "graphql": "^15.5.0",
+    "express-graphql": "^0.12.0"
+  }
+}

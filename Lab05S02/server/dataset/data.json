@@ -1,0 +1,11 @@
+{
+  "users": [
+    { "id": 1, "name": "Luiz", "email": "Luiz@test.com" },
+    { "id": 2, "name": "Breno", "email": "Breno@test.com" },
+    { "id": 3, "name": "Danilo", "email": "Danilo@test.com" }
+  ],
+  "products": [
+    { "id": 101, "name": "Laptop", "price": 3500 },
+    { "id": 102, "name": "Headset", "price": 200 }
+  ]
+}
