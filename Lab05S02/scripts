@@ -1,0 +1,22 @@
+@echo off
+set OUTFILE=results.csv
+
+echo treatment,iteration,time_ms,response_size > %OUTFILE%
+
+echo Coletando amostras...
+
+for /l %%i in (1,1,30) do (
+    echo REST - Exec %%i
+    for /f "tokens=1,2 delims=," %%a in ('curl -w "%%{time_total},%%{size_download}" -s http://localhost:4000/api/users -o temp.out') do (
+        echo REST,%%i,%%a,%%b >> %OUTFILE%
+    )
+
+    echo GraphQL - Exec %%i
+    for /f "tokens=1,2 delims=," %%a in ('curl -w "%%{time_total},%%{size_download}" -s -X POST http://localhost:4000/graphql -H "Content-Type: application/json" -d "{\"query\":\"{ users { id name email } }\"}" -o temp.out') do (
+        echo GraphQL,%%i,%%a,%%b >> %OUTFILE%
+    )
+)
+
+del temp.out
+echo Coleta finalizada! Resultado gerado: %OUTFILE%
+pause
